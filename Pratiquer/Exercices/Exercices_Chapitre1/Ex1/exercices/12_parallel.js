@@ -16,7 +16,10 @@ const { apiResponse } = require('./11_async');
  */
 
 
-const parallel
+const parallel = () => Promise.all([
+    apiResponse("https://jsonplaceholder.typicode.com/todos/1"), 
+    apiResponse("https://jsonplaceholder.typicode.com/todos/2"), 
+    apiResponse("https://jsonplaceholder.typicode.com/todos/3")]);
 
 
 module.exports = { parallel };
