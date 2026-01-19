@@ -28,9 +28,14 @@ console.log(usingThen);
  *   - ne pas utiliser .then
  */ 
 
-const usingAwait = (callback) => sleep(2000).then(callback);
+const { sleep } = require("../exercices/10_promise");
 
-// console.log(usingAwait(() => console.log("Hello World")));
+const usingAwait = async (callback) => {
+  await sleep(2000);
+  callback();
+};
+
+//console.log(usingAwait(() => console.log("Hello World")));
 
 /**
  * Créez une fonction asynchrone qui effectue un appel api vers l'url passé en paramètre
@@ -45,8 +50,10 @@ const usingAwait = (callback) => sleep(2000).then(callback);
  */
 
 //décommentez la ligne suivante une fois le package installé 
-// const axios = require("axios");
+const axios = require("axios");
 
-const apiResponse = (url) => axios.get(url).then(response => response.data);
+const apiResponse = async (url) => {const response = await axios.get(url);
+  return response.data;
+};
 
 module.exports = {usingThen, usingAwait, apiResponse};

@@ -229,34 +229,83 @@ header {
   font-size: 1rem;
   padding: 0 0.5rem;
 }
-</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Started: 2026-01-16 11:54:11</div><div id="summary"><div id="suite-summary"><div class="summary-total">Suites (1)</div><div class="summary-passed summary-empty">0 passed</div><div class="summary-failed">1 failed</div><div class="summary-pending summary-empty">0 pending</div></div><div id="test-summary"><div class="summary-total">Tests (6)</div><div class="summary-passed">4 passed</div><div class="summary-failed">2 failed</div><div class="summary-pending summary-empty">0 pending</div></div></div></div><div id="suite-1" class="suite-container"><div class="suite-info"><div class="suite-path">D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\__tests__\11_async.specs.js</div><div class="suite-time warn">6.281s</div></div><div class="suite-tests"><div class="test-result failed"><div class="test-info"><div class="test-suitename">usingAwait</div><div class="test-title">should not contain banned keywords</div><div class="test-status">failed</div><div class="test-duration">0s</div></div><div class="failureMessages"> <pre class="failureMsg">Error: [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Started: 2026-01-16 14:49:01</div><div id="summary"><div id="suite-summary"><div class="summary-total">Suites (1)</div><div class="summary-passed summary-empty">0 passed</div><div class="summary-failed">1 failed</div><div class="summary-pending summary-empty">0 pending</div></div><div id="test-summary"><div class="summary-total">Tests (0)</div><div class="summary-passed summary-empty">0 passed</div><div class="summary-failed summary-empty">0 failed</div><div class="summary-pending summary-empty">0 pending</div></div></div></div><div id="suite-1" class="suite-container"><div class="suite-info"><div class="suite-path">D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\__tests__\12_parallel.specs.js</div><div class="suite-time">0s</div></div><div class="suite-tests"><div class="test-result failed"><div class="failureMessages suiteFailure"> <pre class="failureMsg">  [1m● [22mTest suite failed to run
 
-Expected substring: not [32m"then"[39m
-Received string:        [31m"callback =&gt; sleep(2000).[7mthen[27m(callback)"[39m
-    at Object.toContain (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\__tests__\11_async.specs.js:36:41)
-    at Promise.then.completed (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\utils.js:289:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\utils.js:222:10)
-    at _callCircusTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:248:40)
-    at _runTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:184:3)
-    at _runTestsForDescribeBlock (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:86:9)
-    at _runTestsForDescribeBlock (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:81:9)
-    at run (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:26:3)
-    at runAndTransformResultsToJestFormat (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:120:21)
-    at jestAdapter (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-runner\build\runTest.js:444:34)</pre></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">usingThen</div><div class="test-title">should not contain banned keywords</div><div class="test-status">passed</div><div class="test-duration">0s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">usingAwait</div><div class="test-title">should return a Promise</div><div class="test-status">passed</div><div class="test-duration">0s</div></div></div><div class="test-result failed"><div class="test-info"><div class="test-suitename">apiResponse</div><div class="test-title">should return the body of the response</div><div class="test-status">failed</div><div class="test-duration">0s</div></div><div class="failureMessages"> <pre class="failureMsg">ReferenceError: axios is not defined
-    at then (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\exercices\11_async.js:50:45)
-    at Object.apiResponse (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\__tests__\11_async.specs.js:42:32)
-    at Promise.then.completed (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\utils.js:289:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\utils.js:222:10)
-    at _callCircusTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:248:40)
-    at _runTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:184:3)
-    at _runTestsForDescribeBlock (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:86:9)
-    at _runTestsForDescribeBlock (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:81:9)
-    at run (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\run.js:26:3)
-    at runAndTransformResultsToJestFormat (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:120:21)
-    at jestAdapter (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
-    at runTestInternal (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\node_modules\jest-runner\build\runTest.js:444:34)</pre></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">usingAwait</div><div class="test-title">should wait 2 seconds</div><div class="test-status">passed</div><div class="test-duration">2.2s</div></div></div><div class="test-result passed"><div class="test-info"><div class="test-suitename">usingThen</div><div class="test-title">should wait 2 seconds</div><div class="test-status">passed</div><div class="test-duration">2.202s</div></div></div></div></div></div></body></html>
+    [1m[31mJest encountered an unexpected token[39m[22m
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see [4mhttps://jestjs.io/docs/ecmascript-modules[24m for how to enable it.
+     • If you are trying to use TypeScript, see [4mhttps://jestjs.io/docs/getting-started#using-typescript[24m
+     • To have some of your "node_modules" files transformed, you can specify a custom [1m"transformIgnorePatterns"[22m in your config.
+     • If you need a custom transformation specify a [1m"transform"[22m option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the [1m"moduleNameMapper"[22m config option.
+
+    You'll find more details and examples of these config options in the docs:
+    [36mhttps://jestjs.io/docs/configuration[39m
+    For information about custom transformations, see:
+    [36mhttps://jestjs.io/docs/code-transformation[39m
+
+    [1m[31mDetails:[39m[22m
+
+    SyntaxError: D:\DEV\Node-DIGI\Pratiquer\Exercices\Exercices_Chapitre1\Ex1\exercices\11_async.js: Identifier 'sleep' has already been declared. (31:8)
+
+    [0m [90m 29 |[39m [90m */[39m [0m
+    [0m [90m 30 |[39m[0m
+    [0m[31m[1m&gt;[22m[39m[90m 31 |[39m [36mconst[39m { sleep } [33m=[39m require([32m"../exercices/10_promise"[39m)[33m;[39m[0m
+    [0m [90m    |[39m         [31m[1m^[22m[39m[0m
+    [0m [90m 32 |[39m[0m
+    [0m [90m 33 |[39m [36mconst[39m usingAwait [33m=[39m [36masync[39m (callback) [33m=&gt;[39m {[0m
+    [0m [90m 34 |[39m   [36mawait[39m sleep([35m2000[39m)[33m;[39m[0m
+
+    [0m[31m[1m&gt;[22m[39m[90m 1 |[39m [36mconst[39m { apiResponse } [33m=[39m require([32m'./11_async'[39m)[33m;[39m[0m
+    [0m [90m   |[39m                         [31m[1m^[22m[39m[0m
+    [0m [90m 2 |[39m[0m
+    [0m [90m 3 |[39m [90m/**[39m[0m
+    [0m [90m 4 |[39m [90m * Utilisez la fonction Promise.all pour exécuter 3 appels API en parallèle[39m[0m
+
+      [2mat instantiate ([22mnode_modules/@babel/parser/src/parse-error/credentials.ts[2m:62:21)[22m
+      [2mat instantiate ([22mnode_modules/@babel/parser/src/parse-error.ts[2m:60:12)[22m
+      [2mat Parser.toParseError [as raise] ([22mnode_modules/@babel/parser/src/tokenizer/index.ts[2m:1456:19)[22m
+      [2mat ScopeHandler.raise [as checkRedeclarationInScope] ([22mnode_modules/@babel/parser/src/util/scope.ts[2m:156:19)[22m
+      [2mat ScopeHandler.checkRedeclarationInScope [as declareName] ([22mnode_modules/@babel/parser/src/util/scope.ts[2m:117:12)[22m
+      [2mat Parser.declareName [as declareNameFromIdentifier] ([22mnode_modules/@babel/parser/src/parser/lval.ts[2m:708:16)[22m
+      [2mat Parser.declareNameFromIdentifier [as checkIdentifier] ([22mnode_modules/@babel/parser/src/parser/lval.ts[2m:703:12)[22m
+      [2mat Parser.checkIdentifier [as checkLVal] ([22mnode_modules/@babel/parser/src/parser/lval.ts[2m:608:12)[22m
+      [2mat Parser.checkLVal ([22mnode_modules/@babel/parser/src/parser/lval.ts[2m:663:14)[22m
+      [2mat Parser.checkLVal ([22mnode_modules/@babel/parser/src/parser/lval.ts[2m:663:14)[22m
+      [2mat Parser.checkLVal [as parseVarId] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:1511:10)[22m
+      [2mat Parser.parseVarId [as parseVar] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:1473:12)[22m
+      [2mat Parser.parseVar [as parseVarStatement] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:1138:10)[22m
+      [2mat Parser.parseVarStatement [as parseStatementContent] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:524:21)[22m
+      [2mat Parser.parseStatementContent [as parseStatementLike] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:406:17)[22m
+      [2mat Parser.parseStatementLike [as parseModuleItem] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:351:17)[22m
+      [2mat Parser.parseModuleItem [as parseBlockOrModuleBlockBody] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:1331:16)[22m
+      [2mat Parser.parseBlockOrModuleBlockBody [as parseBlockBody] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:1305:10)[22m
+      [2mat Parser.parseBlockBody [as parseProgram] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:224:10)[22m
+      [2mat Parser.parseProgram [as parseTopLevel] ([22mnode_modules/@babel/parser/src/parser/statement.ts[2m:206:25)[22m
+      [2mat Parser.parseTopLevel [as parse] ([22mnode_modules/@babel/parser/src/parser/index.ts[2m:45:10)[22m
+      [2mat parse ([22mnode_modules/@babel/parser/src/index.ts[2m:67:38)[22m
+      [2mat parser ([22mnode_modules/@babel/core/src/parser/index.ts[2m:28:19)[22m
+          at parser.next (&lt;anonymous&gt;)
+      [2mat normalizeFile ([22mnode_modules/@babel/core/src/transformation/normalize-file.ts[2m:52:24)[22m
+          at normalizeFile.next (&lt;anonymous&gt;)
+      [2mat run ([22mnode_modules/@babel/core/src/transformation/index.ts[2m:38:36)[22m
+          at run.next (&lt;anonymous&gt;)
+      [2mat transform ([22mnode_modules/@babel/core/src/transform.ts[2m:29:20)[22m
+          at transform.next (&lt;anonymous&gt;)
+      [2mat evaluateSync ([22mnode_modules/gensync/index.js[2m:251:28)[22m
+      [2mat sync ([22mnode_modules/gensync/index.js[2m:89:14)[22m
+      [2mat fn ([22mnode_modules/@babel/core/src/errors/rewrite-stack-trace.ts[2m:97:14)[22m
+      [2mat transformSync ([22mnode_modules/@babel/core/src/transform.ts[2m:66:52)[22m
+      [2mat ScriptTransformer.transformSource ([22mnode_modules/@jest/transform/build/ScriptTransformer.js[2m:519:31)[22m
+      [2mat ScriptTransformer._transformAndBuildScript ([22mnode_modules/@jest/transform/build/ScriptTransformer.js[2m:648:40)[22m
+      [2mat ScriptTransformer.transform ([22mnode_modules/@jest/transform/build/ScriptTransformer.js[2m:700:19)[22m
+      [2mat Object.require ([22mexercices/12_parallel.js[2m:1:25)[22m
+      [2mat Object.require ([22m[0m[36m__tests__/12_parallel.specs.js[39m[0m[2m:2:20)[22m
+</pre></div></div></div></div></div></body></html>
