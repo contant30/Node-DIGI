@@ -6,11 +6,11 @@
 const os = require("os");
 
 function displayOsMessage(){
-    
+
     const platform = os.platform();
 
     if(platform === "win32"){
-        console.log("Windows");
+        console.log("Windows",os.cpus());
 
     }else if(platform === "darwin"){
         console.log("macOS");
