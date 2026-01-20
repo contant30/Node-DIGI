@@ -1,13 +1,13 @@
-const service = require('../service/taskService');
+const service = require('../service/taskService.js');
 
 // permet de gérer les erreurs et l'appel au service
 
 const controller = {
 
     // Récupérer toutes les tâches
-    getAll: (req, res) => {
+    getAll: async (req, res) => {
         try{
-            const listeTaches = service.getAll()
+            const listeTaches = await service.getAll()
             res.send(listeTaches)
         }catch(err){
             res.status(500).send(err.message)
@@ -15,9 +15,9 @@ const controller = {
     },
 
     // récupères une tâche par son id
-    getById: (req, res) => {
+    getById:    async (req, res) => {
         try{
-            const listeTaches = service.getById(req.params.id)
+            const listeTaches = await service.getById(req.params.id)
             res.send(listeTaches)
         }catch(err){
             res.status(500).send(err.message)
@@ -25,9 +25,9 @@ const controller = {
     },
 
     // créer une tâche
-    create: (req, res) => {
+    create: async (req, res) => {
         try{
-            const listeTaches = service.create(req.body)
+            const listeTaches = await service.create(req.body)
             res.send(listeTaches)
         }catch(err){
             res.status(500).send(err.message)
@@ -35,9 +35,9 @@ const controller = {
     },
 
     // mettre à jour une tâche
-    update: (req, res) => {
+    update:     async (req, res) => {
         try{
-            const listeTaches = service.update(req.params.id, req.body)
+            const listeTaches = await service.update(req.params.id, req.body)
             res.send(listeTaches)
         }catch(err){
             res.status(500).send(err.message)
@@ -45,9 +45,9 @@ const controller = {
     },
 
     // supprimer une tâche
-    delete: (req, res) => {
+    delete:     async (req, res) => {
         try{
-            const listeTaches = service.delete(req.params.id)
+            const listeTaches = await service.delete(req.params.id)
             res.send(listeTaches)
         }catch(err){
             res.status(500).send(err.message)
