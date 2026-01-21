@@ -5,7 +5,7 @@ const router = express.Router();
 // mise en place des routes
 
 router.get('/',booksController.getAll);
-router.get('/:id',booksController.getById);
+
 
 router.get('/search/:search',booksController.getBySearch);
 
@@ -15,5 +15,8 @@ router.put('/:id',booksController.update);
 
 router.delete('/:id',booksController.delete);
 
+router.get('/stats',booksController.getStats);
+
+router.get('/:id',booksController.getById);
 
 module.exports = router;

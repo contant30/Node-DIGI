@@ -12,6 +12,15 @@ const controller = {
         }
     },
 
+    getStats: async (req, res) => {
+        try{
+            const stats = await bookService.getStats();
+            res.send(stats);
+        }catch(err){
+            res.status(500).send(err.message);
+        }
+    },
+
     getById: async (req, res) => {
         try{
             const book = await bookService.getById(req.params.id);
