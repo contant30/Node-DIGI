@@ -17,9 +17,9 @@ const login = async (req, res) => {
     } catch (error) {
         res.status(401).json({ message: error.message });
     }
-};
+} 
 
 module.exports = {
     register,
-    login,
+    login, 
 };

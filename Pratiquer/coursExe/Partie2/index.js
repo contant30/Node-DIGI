@@ -5,6 +5,8 @@ const taskRouter = require('./router/taskRouter');
 const listRouter = require('./router/listRouter');
 const authRouter = require('./router/authRouter');
 
+require('dotenv').config();
+
 app.use(express.json());
 
 connectDB();
@@ -14,9 +16,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!!');
 });
 
+app.use('/auth', authRouter);
 app.use('/taches', taskRouter);
 app.use('/listes', listRouter);
-app.use('/auth', authRouter);
+
 
 app.listen(3000, () => {
     console.log('Server started on port 3000');

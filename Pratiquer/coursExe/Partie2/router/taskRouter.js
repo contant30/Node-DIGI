@@ -3,16 +3,14 @@ const router = express.Router();
 const controller = require("../controller/taskController");
 const { taskValidator, idTaskValidator } = require("../validator/taskValidator");
 const validate = require("../validator/validate");
+const authMiddleware = require("../middleware/authMiddleware");
 
 //routes pour les tâches
 
-router.get('/', controller.getAll);
+router.get('/', authMiddleware, controller.getAll);
 router.get('/:id', idTaskValidator, validate, controller.getById);
-
-router.post('/', taskValidator, validate, controller.create);
-
-router.put('/:id', idTaskValidator, taskValidator, validate, controller.update);
-
-router.delete('/:id', idTaskValidator, validate, controller.delete);
+router.post('/', authMiddleware, taskValidator, validate, controller.create);
+router.put('/:id', idTaskValidator, authMiddleware, taskValidator, validate, controller.update);
+router.delete('/:id', idTaskValidator, authMiddleware, validate, controller.delete);
 
 module.exports = router;
